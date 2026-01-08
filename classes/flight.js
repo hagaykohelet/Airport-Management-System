@@ -1,5 +1,5 @@
 import VIPTicket from "./tickets/vipTicket.js"
-import RegularTicket from "./tickets/regularTicket.js"
+import RegularTicket from "./tickets/ticket.js"
 export default class Flight {
     constructor(flightName, airline, flightNumber, maximumNumberOfPassenger, regularTicketPrice, VIPTicketPrice) {
         this.flightName = flightName

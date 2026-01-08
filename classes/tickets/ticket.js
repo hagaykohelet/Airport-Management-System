@@ -1,4 +1,4 @@
-export default class Ticket{
+export default class RegularTicket{
     constructor(price){
         this.ticketNumber = Math.floor(Math.random()*10000) 
         this.price = price
@@ -6,9 +6,6 @@ export default class Ticket{
     }
     getOwnerName(passenger){
         this.ownerName = passenger.name
-    }
-    validateProperties(){
-        return true
     }
 }
 
