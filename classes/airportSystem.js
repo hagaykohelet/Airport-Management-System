@@ -10,29 +10,10 @@ export default class Airport{
         this.#allFlights.push(flight)
     }
     createFlights(){
-        const flight1 = new Flight("el-al","TLV - USA",111,10,120,200)
-        const flight2 =new Flight ("arkia", "USA - TLV", 222,300,100,300)
-        const flight3 = new Flight("WIZZ", "TLV - MON", 999, 100, 400,1000)
-        if(flight1.validateFlight().validate.value){
-            this.addFlight(flight1)
-        }
-        else{
-            return flight1.validateFlight()
-        }
-        if(flight2.validateFlight().validate.value){
-            this.addFlight(flight2)
-        }
-        else{
-            return flight2.validateFlight()
-        }
-        if(flight3.validateFlight().validate.value){
-            this.addFlight(flight3)
-        }
-         else{
-            return flight2.validateFlight()
-        }
+        this.addFlight(new Flight("el-al","TLV - USA",111,10,120,200))
+        this.addFlight(new Flight ("arkia", "USA - TLV", 222,300,100,300))
+        this.addFlight(new Flight("WIZZ", "TLV - MON", 999, 100, 400,1000))
     }
-    
     addTickets(){
         for (let flight of this.#allFlights){
             flight.createTicket()
