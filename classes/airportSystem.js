@@ -32,5 +32,9 @@ export default class Airport{
             }
         });
     }
+    getTickets(){
+        return this.#allFlights
+    }
 }
+
 
